@@ -1,0 +1,11 @@
+{
+  "name": "jas.naz.me-resume",
+  "version": "1.0.0",
+  "description": "My Resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "jason nazario",
+  "license": "ISC"
+}
