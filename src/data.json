@@ -1,0 +1,21 @@
+{
+    "introduction": "",
+    "experience": [
+        {"title": "","company": "","location": ""},
+        {"title": "","company": "","location": ""}
+    ],
+    "levels": [
+        {"name": "","level":1},
+        {"name": "","level":2},
+        {"name": "","level":3},
+        {"name": "","level":4},
+        {"name": "","level":5}
+    ],
+    "skills": [
+        {"name": "","date":"","versions":[],"type":[],"level":5},
+        {"name": "","date":"","versions":[],"type":[],"level":5},
+        {"name": "","date":"","versions":[],"type":[],"level":5},
+        {"name": "","date":"","versions":[],"type":[],"level":5}
+    ],
+    "types": ["Software","Development","Design","Skill","Library"]
+}
