@@ -1,27 +1,17 @@
 import Vue from 'vue'
-import Component from 'vue-class-component'
+// import Component from 'vue-class-component'
 
-// The @Component decorator indicates the class is a Vue component
-@Component({
-    // All component options are allowed in here
-    template: '<button @click="onClick">Click!</button>'
+// import vmApp from './app.vue'
+// import vendors from './vendors'
+import MyComponent from './mycomponent';
+import SingleFileComponent from './singlefilecomponent';
+
+// new Vue(vmApp).$mount('#app')
+var vm = new Vue({
+    el: '#resume',
+    components: {
+        SingleFileComponent,
+        MyComponent
+    }
 })
-export default class MyComponent extends Vue {
-    // Initial data can be declared as instance properties
-    message : string = 'Hello!'
-
-    // Component methods can be declared as instance methods
-    onClick() : void {
-        window.alert(this.message)
-    }
-}
-
-declare module 'vue/types/vue' {
-    // 3. Declare augmentation for Vue
-    interface Vue {
-        $myProperty : string
-    }
-}
-
-var vm = new Vue()
-console.log(vm.$myProperty) // This should compile successfully
+// console.log(vm.$myProperty) // This should compile successfully

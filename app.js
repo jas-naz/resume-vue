@@ -11678,25 +11678,20 @@ exports.mixins = mixins;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-    template: "\n        <div>\n            <h1>Single-file JavaScript Component</h1>\n            <p>{{ data.levels }}</p>\n            <p v-for='level in data.levels'>{{ level.name }}</p>\n        </div>\n    ",
-    data: function () {
+    template: "\n        <div>\n            <h1>Single-file JavaScript Component</h1>\n            <p>{{ userData.levels }}</p>\n        </div>\n    ",
+    data: {
+        userData: []
+    },
+    // data() {
+    //     return {message: 'Oh hai from the component'}
+    // },
+    mounted: function () {
         var self = this;
-        var data = __WEBPACK_IMPORTED_MODULE_0_jquery__["getJSON"]('./static/data.json', function (data) {
+        __WEBPACK_IMPORTED_MODULE_0_jquery__["getJSON"]('./data/data.json', function (data) {
             // this.userData:any = data
-            // self.userData = data
-            return data;
+            self.userData = data;
         });
-        return {
-            data: data
-        };
-    } //,
-    // mounted() {
-    //     const self:any = this
-    //     $.getJSON('./static/data.json', function(data:any) {
-    //         // this.userData:any = data
-    //         self.userData = data
-    //     })
-    // }
+    }
 });
 
 
