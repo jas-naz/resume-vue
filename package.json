@@ -12,18 +12,23 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jasmine": "^2.8.6",
+    "css-loader": "0.28.10",
     "jasmine-core": "^2.99.1",
     "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^1.1.1",
     "karma-webpack": "^2.0.9",
+    "less": "^3.0.1",
+    "less-loader": "4.0.5",
     "npm-install-webpack-plugin": "^4.0.5",
+    "style-loader": "0.20.2",
     "ts-loader": "^3.5.0",
     "typescript": "^2.7.2",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
+    "@types/jquery": "^3.3.0",
     "jquery": "^3.3.1",
     "min-jquery": "^1.7.0",
     "vue": "^2.5.13",

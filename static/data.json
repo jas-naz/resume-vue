@@ -1,21 +1,26 @@
 {
-    "introduction": "",
+    "introduction": "Jason has over 18 years as hybrid Software Engineer [Front-end and Back-end] and User Experience [UX/UI] Designer, and Project Management for creating modern web applications, with companies in and around Seattle with a get-it-done attitude. He has been planning, managing, building applications and web apps—with tools including; HTML5, CSS3, JavaScript [jQuery, Angular, React, Node.js, etc.], Photoshop, Illustrator, Fireworks, Flash [ActionScript], WPF, VS Code, Visual Studio.",
     "experience": [
-        {"title": "","company": "","location": ""},
-        {"title": "","company": "","location": ""}
+        {"title": "Senior UI/UX Developer","company": "","location": ""},
+        {"title": "Senior UI/UX Developer","company": "","location": ""},
+        {"title": "Angular Software Developer III","company": "","location": ""},
+        {"title": "Design Integrator & Software Developer","company": "","location": ""}
     ],
     "levels": [
-        {"name": "","level":1},
-        {"name": "","level":2},
-        {"name": "","level":3},
-        {"name": "","level":4},
-        {"name": "","level":5}
+        {"name": "Beginner","level":1},
+        {"name": "Intermediate","level":2},
+        {"name": "Seasoned","level":3},
+        {"name": "Proficient","level":4},
+        {"name": "Expert","level":5}
     ],
     "skills": [
-        {"name": "","date":"","versions":[],"type":[],"level":5},
-        {"name": "","date":"","versions":[],"type":[],"level":5},
-        {"name": "","date":"","versions":[],"type":[],"level":5},
-        {"name": "","date":"","versions":[],"type":[],"level":5}
+        {"name": "ActionScript","date":"","versions":[],"type":[],"level":5},
+        {"name": "Angular","date":"","versions":[],"type":[],"level":5},
+        {"name": "ASP","date":"","versions":[],"type":[],"level":5},
+        {"name": "CSS","date":"","versions":[],"type":[],"level":5}
     ],
-    "types": ["Software","Development","Design","Skill","Library"]
+    "types": ["Software","Development","Design","Skill","Library"],
+    "education": [
+        {}
+    ]
 }
