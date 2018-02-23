@@ -1,9 +1,9 @@
 import * as $ from "jquery"
-import './css/styles.css';
+// import './css/styles.css';
 
 export default {
     template : `
-        <div>
+        <div v-if='resumeData != null'>
             <h1>Resume Component</h1>
             <p>{{ resumeData.introduction }}</p>
             <div v-for='item in resumeData'>
@@ -19,10 +19,10 @@ export default {
                 <div>{{ skill.level }}</div>
             </div>
             <h2>Education</h2>
-            <div v-for='skill in resumeData.skills' class='skill'>
-                <div>{{ skill.name }}</div>
-                <div>{{ skill.level }}</div>
-                <div>{{ skill.level }}</div>
+            <div v-for='school in resumeData.education' class='section'>
+                <div>{{ school.name }}</div>
+                <div>{{ school.level }}</div>
+                <div>{{ school.level }}</div>
             </div>
         </div>
     `,
@@ -33,6 +33,7 @@ export default {
         //         // self.userData = data
         //         return data.responseText
         //     }.bind(this))
+        // return { resumeData: {introduction: null} }
         return { resumeData: null }
     } ,
     mounted() {

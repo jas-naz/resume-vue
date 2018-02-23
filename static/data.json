@@ -21,6 +21,8 @@
     ],
     "types": ["Software","Development","Design","Skill","Library"],
     "education": [
-        {}
+        {"name":"Art Institute of Seattle"},
+        {"name":"Seattle Central Community College"},
+        {"name":"Franklin High School"}
     ]
 }

@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import './css/styles.css';
 // import Component from 'vue-class-component'
 
 // import vmApp from './app.vue'
