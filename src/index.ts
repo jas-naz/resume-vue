@@ -6,13 +6,15 @@ import './css/styles.css';
 // import vendors from './vendors'
 import MyComponent from './mycomponent';
 import SingleFileComponent from './singlefilecomponent';
+import SideBar from './sidebar';
 
 // new Vue(vmApp).$mount('#app')
 var vm = new Vue({
     el: '#resume',
     components: {
         SingleFileComponent,
-        MyComponent
+        MyComponent,
+        SideBar
     }
 })
 // console.log(vm.$myProperty) // This should compile successfully

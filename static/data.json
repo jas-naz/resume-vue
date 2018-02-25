@@ -1,10 +1,10 @@
 {
     "introduction": "Jason has over 18 years as hybrid Software Engineer [Front-end and Back-end] and User Experience [UX/UI] Designer, and Project Management for creating modern web applications, with companies in and around Seattle with a get-it-done attitude. He has been planning, managing, building applications and web apps—with tools including; HTML5, CSS3, JavaScript [jQuery, Angular, React, Node.js, etc.], Photoshop, Illustrator, Fireworks, Flash [ActionScript], WPF, VS Code, Visual Studio.",
     "experience": [
-        {"title": "Senior UI/UX Developer","company": "","location": ""},
-        {"title": "Senior UI/UX Developer","company": "","location": ""},
-        {"title": "Angular Software Developer III","company": "","location": ""},
-        {"title": "Design Integrator & Software Developer","company": "","location": ""}
+        {"title": "Senior UX/UI Developer","company": "Milliman","location": "Seattle, WA"},
+        {"title": "Senior UX/UI Developer","company": "Centric Consulting","location": "Redmond, WA"},
+        {"title": "Angular Software Developer III","company": "F5 Networks","location": "Seattle, WA"},
+        {"title": "Design Integrator & Software Developer","company": "Microsoft","location": "Redmond, WA"}
     ],
     "levels": [
         {"name": "Beginner","level":1},

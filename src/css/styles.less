@@ -1,18 +1,71 @@
 // Styles here
-@import url(https\:\/\/fonts.googleapis.com\/css?family=Orbitron|Encode+Sans+Expanded&.css);
+@import url(https\:\/\/fonts.googleapis.com\/css?family=Orbitron|Encode+Sans:200,400,700|Encode+Sans+Expanded:200,400,700&.css);
 
-#resume {
+@vivid-arctic-blue: #3CB4CD;
+@arctic-blue: #2D92B7;
+@deep-cyan-blue: #17669B;
+@deep-blue: #074586;
+
+@light-gray: #dedede;
+// @normal-gray: ;
+
+body {
+    margin: 0;
+    padding: 0;
     font-family: 'Encode Sans Expanded', sans-serif;
+    // font-family: 'Encode Sans', sans-serif;
+    -webkit-font-smooth: antialiased;
     font-size: .9em;
-    line-height: 1.4em;
-    color: #333;
+    line-height: 1.5em;
+    color: #444;
+}
+// #resume {
     h1 {
         color: gray;
+    }
+    .area {
+        clear: both;
+    }
+    .sidebar {
+        position: relative;
+        float: left;
+        width: 230px;
+        height: 275px;
+        color: white;
+        background-color: @deep-cyan-blue;
+        &.profile {
+            background-color: @vivid-arctic-blue;
+        }
+        &.experience {
+            background-color: @arctic-blue;
+        }
+        &.education {
+            background-color: @deep-cyan-blue;
+        }
+        &.skills {
+            background-color: @deep-blue;
+        }
+        & > div {
+            position: absolute;
+            font-size: 1.4em;
+            font-weight: 200;
+            line-height: 1.4em;
+            margin: 55px 20px 15px 30px;
+            bottom: 15px;
+            &>div {
+                font-size: 1.5em;
+                // font-weight: 400;
+            }
+        }
+    }
+    .grouped {
+        overflow: hidden;
+        padding: 10px 30px;
     }
     .section {
         &.skill {
             & div { 
-                border-bottom: solid 1px #dedede;
+                border-bottom: solid 1px @light-gray;
             }
         }
         margin-bottom: 15px;
@@ -24,6 +77,15 @@
         & div + div {
             width: 10%;
         }
-        clear: both;
+    }
+// }
+
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: .8em;
+        line-height: 1.4em;
+    }
+    .sidebar {
+        width: 200px;
     }
 }

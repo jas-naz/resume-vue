@@ -1,25 +1,74 @@
-@import url(https\:\/\/fonts.googleapis.com\/css?family=Orbitron|Encode+Sans+Expanded&.css);
-#resume {
+@import url(https\:\/\/fonts.googleapis.com\/css?family=Orbitron|Encode+Sans:200,400,700|Encode+Sans+Expanded:200,400,700&.css);
+body {
+  margin: 0;
+  padding: 0;
   font-family: 'Encode Sans Expanded', sans-serif;
+  -webkit-font-smooth: antialiased;
   font-size: .9em;
-  line-height: 1.4em;
-  color: #333;
+  line-height: 1.5em;
+  color: #444;
 }
-#resume h1 {
+h1 {
   color: gray;
 }
-#resume .section {
-  margin-bottom: 15px;
+.area {
   clear: both;
 }
-#resume .section.skill div {
+.sidebar {
+  position: relative;
+  float: left;
+  width: 230px;
+  height: 275px;
+  color: white;
+  background-color: #17669B;
+}
+.sidebar.profile {
+  background-color: #3CB4CD;
+}
+.sidebar.experience {
+  background-color: #2D92B7;
+}
+.sidebar.education {
+  background-color: #17669B;
+}
+.sidebar.skills {
+  background-color: #074586;
+}
+.sidebar > div {
+  position: absolute;
+  font-size: 1.4em;
+  font-weight: 200;
+  line-height: 1.4em;
+  margin: 55px 20px 15px 30px;
+  bottom: 15px;
+}
+.sidebar > div > div {
+  font-size: 1.5em;
+}
+.grouped {
+  overflow: hidden;
+  padding: 10px 30px;
+}
+.section {
+  margin-bottom: 15px;
+}
+.section.skill div {
   border-bottom: solid 1px #dedede;
 }
-#resume .section div {
+.section div {
   float: left;
   width: 80%;
   padding: 2px 0;
 }
-#resume .section div + div {
+.section div + div {
   width: 10%;
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: .8em;
+    line-height: 1.4em;
+  }
+  .sidebar {
+    width: 200px;
+  }
 }
