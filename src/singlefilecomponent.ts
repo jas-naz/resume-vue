@@ -17,7 +17,7 @@ export default {
                     </div>
                     <p>{{ resumeData.introduction }}</p>
                     <div class='col col-1'>
-                        <div>Adress: {{ resumeData.profile.address }}</div>
+                        <div>Address: {{ resumeData.profile.address }}</div>
                         <div></div>
                     </div>
                     <div class='col col-1'>
