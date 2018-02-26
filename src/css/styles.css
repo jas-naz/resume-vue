@@ -113,19 +113,12 @@ h1 {
   bottom: 0em;
   width: 100%;
   height: 4em;
-  _: ; -webkit-background-image: linear-gradient(rgba(255, 255, 255, 0) 10%, #ffffff 100%);
-  /* Safari */
-  _: ; -khtml-background-image: linear-gradient(rgba(255, 255, 255, 0) 10%, #ffffff 100%);
-  /* Konqueror HTML */
-  _: ; -moz-background-image: linear-gradient(rgba(255, 255, 255, 0) 10%, #ffffff 100%);
-  /* Firefox */
-  _: ; -ms-background-image: linear-gradient(rgba(255, 255, 255, 0) 10%, #ffffff 100%);
-  /* Internet Explorer/Edge */
-  _: ; -o-background-image: linear-gradient(rgba(255, 255, 255, 0) 10%, #ffffff 100%);
-  /* Old, pre-WebKit, versions of Opera */
-  _: ; background-image: linear-gradient(rgba(255, 255, 255, 0) 10%, #ffffff 100%);
-  /* Non-prefixed version, currently
-                                                supported by Chrome and Opera */
+  -webkit-background-image: linear-gradient(rgba(255, 255, 255, 0) 10%, #ffffff 100%);
+  -khtml-background-image: linear-gradient(rgba(255, 255, 255, 0) 10%, #ffffff 100%);
+  -moz-background-image: linear-gradient(rgba(255, 255, 255, 0) 10%, #ffffff 100%);
+  -ms-background-image: linear-gradient(rgba(255, 255, 255, 0) 10%, #ffffff 100%);
+  -o-background-image: linear-gradient(rgba(255, 255, 255, 0) 10%, #ffffff 100%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 10%, #ffffff 100%);
 }
 @media only screen and (max-width: 1000px) {
   body {

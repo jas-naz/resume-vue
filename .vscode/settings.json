@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    ".DS_Store": "explorerExcludedFiles",
+    "node_modules": "explorerExcludedFiles",
+    "*.log": "explorerExcludedFiles"
+  }
+}

@@ -1,7 +1,14 @@
-import * as $ from "jquery"
-// import './css/styles.css';
+import * as $ from "jquery";
 
 import SideBar from './sidebar';
+
+// const Home = async() => {
+//     const template = await fetch('http://yourserver.com/templates/foo.html')
+//     return {
+//         template,
+//         // other component options...
+//     }
+// }
 
 export default {
     components : {
@@ -15,7 +22,8 @@ export default {
                     <div class='name'>{{ resumeData.profile.first }}
                         <div>{{ resumeData.profile.last }}</div>
                     </div>
-                    <p>{{ resumeData.introduction }}</p>
+                    <p>{{ resumeData.profile.introduction }}</p>
+                    <p>{{ resumeData.profile.introMore }}</p>
                     <div class='col col-1'>
                         <div>Address: {{ resumeData.profile.address }}</div>
                         <div></div>

@@ -1,10 +1,10 @@
 {
     "profile": {
         "first": "Jason", "last": "Nazario", "address": "Kent, WA", "mobile": "253.242.3629", 
-        "skype": "jasonnazario", "email": "jason@nazario.me", "url": "jason.nazario.me"
+        "skype": "jasonnazario", "email": "jason@nazario.me", "url": "jason.nazario.me",
+        "introduction": "Jason has over 18 years as hybrid Software Engineer [Front-end and Back-end], User Experience [UX/UI] Designer, and Project Manager for creating modern web applications, with companies in and around Seattle with a let's get-it-done attitude.",
+        "introMore": "He has been planning, managing, building applications and web apps—with tools including; HTML5, CSS3, JavaScript [jQuery, Angular, React, VueJS, Node.js, etc.], Photoshop, Illustrator, Fireworks, Flash [ActionScript], WPF, VS Code, Visual Studio."
     },
-    "introduction": "Jason has over 18 years as hybrid Software Engineer [Front-end and Back-end], User Experience [UX/UI] Designer, and Project Manager for creating modern web applications, with companies in and around Seattle with a let's get-it-done attitude.",
-    "intro-more": "He has been planning, managing, building applications and web apps—with tools including; HTML5, CSS3, JavaScript [jQuery, Angular, React, VueJS, Node.js, etc.], Photoshop, Illustrator, Fireworks, Flash [ActionScript], WPF, VS Code, Visual Studio.",
     "experience": [
         {"title": "Sr UX/UI Developer","company": "Milliman","details": "Customized an enterprise corporate SharePoint environment with new React add-ins from wireframes that were built out and needed to be integrated throughout the many different on-prem and O365 sites.","location": "Seattle, WA","dates": "8/2017–current"},
         {"title": "Sr UX/UI Developer","company": "Centric Consulting","details": "Debugging, fixing features in React marketing management application that is part of a corporate-wide initiative at Microsoft. Working as part of the development team consistently using Agile principles of collaboration, prioritization, and application of scrum methodologies.","location": "Redmond, WA","dates": "4/2017–7/2017"},
