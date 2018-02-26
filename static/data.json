@@ -1,10 +1,15 @@
 {
-    "introduction": "Jason has over 18 years as hybrid Software Engineer [Front-end and Back-end] and User Experience [UX/UI] Designer, and Project Management for creating modern web applications, with companies in and around Seattle with a get-it-done attitude. He has been planning, managing, building applications and web apps—with tools including; HTML5, CSS3, JavaScript [jQuery, Angular, React, Node.js, etc.], Photoshop, Illustrator, Fireworks, Flash [ActionScript], WPF, VS Code, Visual Studio.",
+    "profile": {
+        "first": "Jason", "last": "Nazario", "address": "Kent, WA", "mobile": "253.242.3629", 
+        "skype": "jasonnazario", "email": "jason@nazario.me", "url": "jason.nazario.me"
+    },
+    "introduction": "Jason has over 18 years as hybrid Software Engineer [Front-end and Back-end], User Experience [UX/UI] Designer, and Project Manager for creating modern web applications, with companies in and around Seattle with a let's get-it-done attitude.",
+    "intro-more": "He has been planning, managing, building applications and web apps—with tools including; HTML5, CSS3, JavaScript [jQuery, Angular, React, VueJS, Node.js, etc.], Photoshop, Illustrator, Fireworks, Flash [ActionScript], WPF, VS Code, Visual Studio.",
     "experience": [
-        {"title": "Senior UX/UI Developer","company": "Milliman","location": "Seattle, WA"},
-        {"title": "Senior UX/UI Developer","company": "Centric Consulting","location": "Redmond, WA"},
-        {"title": "Angular Software Developer III","company": "F5 Networks","location": "Seattle, WA"},
-        {"title": "Design Integrator & Software Developer","company": "Microsoft","location": "Redmond, WA"}
+        {"title": "Sr UX/UI Developer","company": "Milliman","details": "Customized an enterprise corporate SharePoint environment with new React add-ins from wireframes that were built out and needed to be integrated throughout the many different on-prem and O365 sites.","location": "Seattle, WA","dates": "8/2017–current"},
+        {"title": "Sr UX/UI Developer","company": "Centric Consulting","details": "Debugging, fixing features in React marketing management application that is part of a corporate-wide initiative at Microsoft. Working as part of the development team consistently using Agile principles of collaboration, prioritization, and application of scrum methodologies.","location": "Redmond, WA","dates": "4/2017–7/2017"},
+        {"title": "Software Developer III","company": "F5 Networks","details": "Building new features and finished existing AngularJS[1.5] support application that combined two support sites into one. Working in development team consistently using Agile principles of collaboration, prioritization, consistent application of scrum methodologies. http://support.f5.com","location": "Seattle, WA","dates": "3/2016–3/2017"},
+        {"title": "Design Integrator/Software Developer","company": "Microsoft","details": "Prototyping, building and unit testing web UI across projects in the portfolio. Re-created design layouts from design redlines. Worked in a large Agile/SCRUM team, particularly working with other's code and checking in code into daily builds for both Windows Phone 8.1 and Windows 10/mobile.","location": "Redmond, WA","dates": "8/2015–12/2015"}
     ],
     "levels": [
         {"name": "Beginner","level":1},
@@ -21,8 +26,8 @@
     ],
     "types": ["Software","Development","Design","Skill","Library"],
     "education": [
-        {"name":"Art Institute of Seattle"},
-        {"name":"Seattle Central Community College"},
-        {"name":"Franklin High School"}
+        {"degree": "Associate of Arts","name":"Art Institute of Seattle","details": "Blah, blah blah...","dates": "Jan 1991 – Jul 1993"},
+        {"degree": "","name":"Seattle Central Community College","details": "Blah, blah blah...","dates": "Aug 1988 - Jul 1989"},
+        {"degree": "High School Diploma","name":"Franklin High School","details": "Blah, blah blah...","dates": "Sept 1994 - Jun 1988"}
     ]
 }
