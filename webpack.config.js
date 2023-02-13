@@ -1,6 +1,7 @@
 // const vendors = require('./src/vendors');
 const path = require('path');
 const webpack = require('webpack');
+// const NpmInstallPlugin = require('npm-install-webpack-plugin');
 
 module.exports = {
   entry: './src/index.ts'
@@ -41,12 +42,20 @@ module.exports = {
     ]
   },
   // plugins: [
-  //   new webpack.optimize.CommonsChunkPlugin({
-  //     name: 'vendor',
-  //     minChunks: function (module) {
-  //       return module.context && module.context.indexOf('node_modules') !== -1;
-  //     }
-  //   })
-  // ]
+  //   new NpmInstallPlugin(),
+  // //   new webpack.optimize.CommonsChunkPlugin({
+  // //     name: 'vendor',
+  // //     minChunks: function (module) {
+  // //       return module.context && module.context.indexOf('node_modules') !== -1;
+  // //     }
+  // //   })
+  // ],
+  devServer: {
+    host: 'localhost',
+    hot: true,
+    devMiddleware: {
+      writeToDisk: true,
+    },
+  }
 }
 // https://vuejsdevelopers.com/2017/06/18/vue-js-boost-your-app-with-webpack/
