@@ -101,7 +101,7 @@ export default {
     },
     mounted() {
         const self:any = this
-        $.getJSON('./static/data.json', json => {
+        $.getJSON('./data.json', json => {
             self.resumeData = json
         })
     }

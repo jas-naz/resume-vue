@@ -1,18 +1,24 @@
 // const vendors = require('./src/vendors');
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 // const NpmInstallPlugin = require('npm-install-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.ts'
+  mode: 'development',
+  context: path.join(__dirname, '/'),
+  entry: './src/index.ts',
   // {
-    // app: './src/index.ts' //,
-    // path : path.resolve(__dirname, 'dist')
-    // vendors,
-  // }
-  ,
+  //   app: './src/index.ts' //,
+  //   path : path.resolve(__dirname, 'dist')
+  //   vendors,
+  // },
   output: {
-    filename: './[name].js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: './[name].js',
+    clean: true,
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -41,21 +47,41 @@ module.exports = {
       }
     ]
   },
-  // plugins: [
-  //   new NpmInstallPlugin(),
-  // //   new webpack.optimize.CommonsChunkPlugin({
-  // //     name: 'vendor',
-  // //     minChunks: function (module) {
-  // //       return module.context && module.context.indexOf('node_modules') !== -1;
-  // //     }
-  // //   })
-  // ],
+  devtool: 'inline-source-map',
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './static/index.html',
+      // title: 'Development',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: './static/data.json' }
+      ]
+    })
+    //   new NpmInstallPlugin(),
+    // //   new webpack.optimize.CommonsChunkPlugin({
+    // //     name: 'vendor',
+    // //     minChunks: function (module) {
+    // //       return module.context && module.context.indexOf('node_modules') !== -1;
+    // //     }
+    // //   })
+  ],
   devServer: {
+    static: './dist',
     host: 'localhost',
     hot: true,
     devMiddleware: {
       writeToDisk: true,
     },
-  }
+    // proxy: {
+    //   '/': 'http://localhost:8080'
+    // },
+    // historyApiFallback: {
+    //   index: './index.html'
+    // }
+  },
+  optimization: {
+    runtimeChunk: 'single',
+  },
 }
 // https://vuejsdevelopers.com/2017/06/18/vue-js-boost-your-app-with-webpack/
