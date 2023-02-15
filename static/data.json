@@ -21,19 +21,20 @@
         {"name": "Expert","level":5}
     ],
     "skills": [
-        {"name": "Adobe Creative Suite","date":"","versions":[],"type":[],"level":5},
-        {"name": "ASP.net | C# | VB.net","date":"","versions":[],"type":[],"level":4},
-        {"name": "Azure","date":"","versions":[],"type":[],"level":4},
-        {"name": "CSS3, HTML5","date":"","versions":[],"type":[],"level":5},
-        {"name": "Design: Application, Graphic, Interaction, Product, UX/UI, Web","date":"","versions":[],"type":[],"level":5},
-        {"name": "JavaScript: Angular, React, Vue","date":"","versions":[],"type":[],"level":5},
-        {"name": "User Experience (UX) | User Interface (UI)","date":"","versions":[],"type":[],"level":5},
-        {"name": "CSS3, HTML5","date":"","versions":[],"type":[],"level":5}
+        {"name": "Adobe Creative Suite","date":"","versions":[],"type":[],"level":5, "years": "15+"},
+        {"name": "Agile Scrum methodology","date":"","versions":[],"type":[],"level":4, "years": "6"},
+        {"name": "ASP.net | C# | VB.net | CSS3, HTML5","date":"","versions":[],"type":[],"level":4, "years": "10+"},
+        {"name": "Azure","date":"","versions":[],"type":[],"level":4, "years": "5"},
+        {"name": "Design: Application, Graphic, Interaction, Product, UX/UI, Web","date":"","versions":[],"type":[],"level":5, "years": "7"},
+        {"name": "JavaScript: Angular, React, Vue","date":"","versions":[],"type":[],"level":5, "years": "15+"},
+        {"name": "User Experience (UX) | User Interface (UI)","date":"","versions":[],"type":[],"level":5, "years": "10+"},
+        {"name": "Visual Studio | VS Code","date":"","versions":[],"type":[],"level":5, "years": "10+"}
     ],
     "types": ["Software","Development","Design","Skill","Library"],
     "education": [
         {"degree": "Associate of Arts","name":"Art Institute of Seattle","details": "Visual Communications, Honor roll member.","dates": "Jan 1991 – Jul 1993"},
         {"degree": "","name":"Seattle Central Community College","details": "General micro-computer courses.","dates": "Aug 1988 – Jul 1989"},
         {"degree": "High School Diploma","name":"Franklin High School","details": "Advanced art placement.","dates": "Sept 1994 – Jun 1988"}
-    ]
+    ],
+    "footer": "Request my full resume: jason@nazario.me"
 }

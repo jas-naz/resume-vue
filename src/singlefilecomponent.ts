@@ -79,13 +79,14 @@ export default {
                 <side-bar typeclass='skills' propa='Skills &' propb='Interests'></side-bar>
                 <div class='grouped separator'>
                     <div class="small-label skills">Skills & Interests</div>
-                    <h2>Skills</h2>
+                    <h2 class="small-hide">Skills</h2>
                     <div v-for='skill in resumeData.skills' class='item skill'>
                         <div>{{ skill.name }}</div>
                         <div>{{ skill.level }}</div>
-                        <div>{{ skill.level }}</div>
+                        <div>{{ skill.years }}</div>
                     </div>
                 </div>
+                <div class="footer">{{ resumeData.footer }}</div>
             </div>
         </div>
     `,
