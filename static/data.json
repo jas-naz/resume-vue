@@ -21,14 +21,14 @@
         {"name": "Expert","level":5}
     ],
     "skills": [
-        {"name": "Adobe Creative Suite","date":"","versions":[],"type":[],"level":5, "years": "15+"},
-        {"name": "Agile Scrum methodology","date":"","versions":[],"type":[],"level":4, "years": "6"},
-        {"name": "ASP.net | C# | VB.net | CSS3, HTML5","date":"","versions":[],"type":[],"level":4, "years": "10+"},
-        {"name": "Azure","date":"","versions":[],"type":[],"level":4, "years": "5"},
-        {"name": "Design: Application, Graphic, Interaction, Product, UX/UI, Web","date":"","versions":[],"type":[],"level":5, "years": "7"},
-        {"name": "JavaScript: Angular, React, Vue","date":"","versions":[],"type":[],"level":5, "years": "15+"},
-        {"name": "User Experience (UX) | User Interface (UI)","date":"","versions":[],"type":[],"level":5, "years": "10+"},
-        {"name": "Visual Studio | VS Code","date":"","versions":[],"type":[],"level":5, "years": "10+"}
+        {"name": "Adobe Creative Suite","date":"","versions":[],"type":[],"level":5, "years": "15+yr"},
+        {"name": "Agile Scrum methodology","date":"","versions":[],"type":[],"level":4, "years": "6 yrs"},
+        {"name": "ASP.net | C# | VB.net | CSS3, HTML5","date":"","versions":[],"type":[],"level":4, "years": "10+yr"},
+        {"name": "Azure","date":"","versions":[],"type":[],"level":4, "years": "5 yrs"},
+        {"name": "Design: Application, Graphic, Interaction, Product, UX/UI, Web","date":"","versions":[],"type":[],"level":5, "years": "7 yrs"},
+        {"name": "JavaScript: Angular, React, Vue","date":"","versions":[],"type":[],"level":5, "years": "15+yr"},
+        {"name": "User Experience (UX) | User Interface (UI)","date":"","versions":[],"type":[],"level":5, "years": "10+yr"},
+        {"name": "Visual Studio | VS Code","date":"","versions":[],"type":[],"level":5, "years": "10+yr"}
     ],
     "types": ["Software","Development","Design","Skill","Library"],
     "education": [
