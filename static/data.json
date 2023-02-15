@@ -2,7 +2,8 @@
     "profile": {
         "first": "Jason", "last": "Nazario", "address": "Kent, WA", "mobile": "253.242.3NAZ", 
         "skype": "jasonnazario", "email": "jason@nazario.me", "url": "jason.nazario.me",
-        "introduction": "With over 20 years of Software Engineering [Front-end and Back-end], User Experience [UX/UI] Design, and Project Management to create modern web applications, in and around Seattle. With a let's get-it-done attitude. Engineering, managing, building applications and web apps—with tools including; HTML5, CSS3, JavaScript [Angular, React, VueJS, Node.js, jQuery, etc.], Photoshop, Illustrator, Fireworks, Flash [ActionScript], WPF, VS Code, Visual Studio.",
+        "title": "Technical Product Lead",
+        "introduction": "Work with business to define features, prototyping, build initial UI framework, approve features in development, design and architect application, with a focus on front-end UX/UI, create stories, manage development team, ensure the project stays on track.",
         "introMore": ""
     },
     "experience": [

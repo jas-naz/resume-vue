@@ -1,13 +1,15 @@
 // const vendors = require('./src/vendors');
 const path = require('path');
+const CompressionPlugin = require("compression-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 // const NpmInstallPlugin = require('npm-install-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
-  context: path.join(__dirname, '/'),
+  // mode: 'production',
+  // mode: 'development',
+  // context: path.join(__dirname, '/'),
   entry: './src/index.ts',
   // {
   //   app: './src/index.ts' //,
@@ -47,8 +49,12 @@ module.exports = {
       }
     ]
   },
-  devtool: 'inline-source-map',
+  // devtool: 'inline-source-map',
   plugins: [
+    new CompressionPlugin({
+      algorithm: "gzip",
+      test: /\.js(\?.*)?$/i,
+    }),
     new HtmlWebpackPlugin({
       template: './static/index.html',
       // title: 'Development',
@@ -67,18 +73,16 @@ module.exports = {
     // //   })
   ],
   devServer: {
-    static: './dist',
+    static: {
+      directory: './dist',
+      watch: true
+    },
     host: 'localhost',
     hot: true,
-    devMiddleware: {
-      writeToDisk: true,
-    },
-    // proxy: {
-    //   '/': 'http://localhost:8080'
+    // devMiddleware: {
+    //   writeToDisk: true,
     // },
-    // historyApiFallback: {
-    //   index: './index.html'
-    // }
+    watchFiles: ['static/*.json'],
   },
   optimization: {
     runtimeChunk: 'single',

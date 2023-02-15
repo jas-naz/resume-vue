@@ -7,12 +7,14 @@
     "test": "karma start",
     "dev": "webpack-dev-server --node-env=development",
     "start": "webpack serve --open --mode=development",
+    "start:prod": "webpack serve --open --mode=production",
     "build": "npx webpack build --config ./webpack.config.js --stats"
   },
   "author": "jason nazario",
   "license": "ISC",
   "devDependencies": {
     "@types/jasmine": "^2.8.6",
+    "compression-webpack-plugin": "^10.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",

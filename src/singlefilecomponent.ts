@@ -1,5 +1,4 @@
 import * as $ from "jquery";
-
 import SideBar from './sidebar';
 
 // const Home = async() => {
@@ -22,6 +21,7 @@ export default {
                     <div class='name'>{{ resumeData.profile.first }}
                         <div>{{ resumeData.profile.last }}</div>
                     </div>
+                    <div class="title">{{ resumeData.profile.title }}</div>
                     <p>{{ resumeData.profile.introduction }}</p>
                     <p>{{ resumeData.profile.introMore }}</p>
                     <div class='col col-1'>

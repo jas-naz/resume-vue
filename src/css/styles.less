@@ -96,6 +96,11 @@ body {
                     font-weight: 500;
                 }
             }
+            div.title {
+                font-size: 1.5em;
+                font-weight: 500;
+                margin: .5em 0 0 0;
+            }
             .col {
                 // position: absolute; 
                 // bottom: 0em;
@@ -171,11 +176,14 @@ body {
     }
 }
 @media only screen and (max-width: 550px) {
+    body {
+        font-size: .75em;
+    }
     .sidebar {
-            width: 30px;
-            &>div {
-                display: none;
-            }
+        width: 30px;
+        &>div {
+            display: none;
+        }
     }
     .small-label {
         font-weight: 500;
@@ -194,6 +202,11 @@ body {
         &.skills {
             color: @color-4;
         }
+    }
+}
+@media only screen and (max-width: 440px) {
+    body {
+        font-size: .65em;
     }
 }
 @media print {
