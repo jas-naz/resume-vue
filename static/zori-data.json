@@ -1,0 +1,33 @@
+{
+    "profile": {
+        "first": "Zoriannah", "last": "Nazario", "address": "Kent, WA", "mobile": "253.ZORINAZ", 
+        "skype": "zorinazario", "email": "zori@nazario.me", "url": "zori.nazario.me",
+        "title": "Baby Girl",
+        "introduction": "Zori is the cute daughter of Jason and Miriam Nazario.",
+        "introMore": ""
+    },
+    "experience": [
+        {"title": "Development Team Lead","company": "Revel Consulting | Infogain","details": "Create detailed software development plans and assign tasks to team members. Scope development effort, and provide reliable resource and timeline estimates. Coach and mentor development staff.","location": "Seattle, WA","dates": "9/2018–current"},
+        {"title": "Sr UX/UI Developer","company": "Milliman","details": "Customized an enterprise corporate SharePoint environment with new React add-ins from wireframes that were built out and needed to be integrated throughout the many different on-prem and O365 sites.","location": "Seattle, WA","dates": "8/2017–9/2018"},
+        {"title": "Sr UX/UI Developer","company": "Centric Consulting","details": "Debugging, fixing features in React marketing management application that is part of a corporate-wide initiative at Microsoft. Working as part of the development team consistently using Agile principles of collaboration, prioritization, and application of scrum methodologies.","location": "Redmond, WA","dates": "4/2017–7/2017"}
+    ],
+    "levels": [
+        {"name": "Beginner","level":1},
+        {"name": "Intermediate","level":2},
+        {"name": "Seasoned","level":3},
+        {"name": "Proficient","level":4},
+        {"name": "Expert","level":5}
+    ],
+    "skills": [
+        {"name": "Adobe Creative Suite","date":"","versions":[],"type":[],"level":5, "years": "15+"},
+        {"name": "Agile Scrum methodology","date":"","versions":[],"type":[],"level":4, "years": "6"},
+        {"name": "ASP.net | C# | VB.net | CSS3, HTML5","date":"","versions":[],"type":[],"level":4, "years": "10+"},
+        {"name": "Azure | AWS | Google Cloud","date":"","versions":[],"type":[],"level":4, "years": "5"}
+    ],
+    "types": ["Software","Development","Design","Skill","Library"],
+    "education": [
+        {"degree": "Associate of Arts","name":"Art Institute of Seattle","details": "Visual Communications, Honor roll member.","dates": "Jan 1991 – Jul 1993"},
+        {"degree": "High School Diploma","name":"Franklin High School","details": "Advanced art placement.","dates": "Sept 1994 – Jun 1988"}
+    ],
+    "footer": "Request my full resume: jason@nazario.me"
+}

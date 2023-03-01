@@ -5,9 +5,10 @@ import Component from 'vue-class-component'
 @Component({
     // All component options are allowed in here
     name: 'sidebar',
-    props: ['propa', 'propb', 'typeclass'],
+    props: ['propa', 'propb', 'typeclass', 'hue'],
     // template: '<div>Work<div>&{label}</div></div>'
-    template: `<div class='sidebar' :class='typeclass'><div>{{propa}}
+    // style: 'filter: hue-rotate(100deg);',
+    template: `<div class='sidebar' :class='typeclass' :style='{filter: "hue-rotate("+hue+")"}'><div>{{propa}}
             <div>{{propb}}</div>
         </div>
     </div>`

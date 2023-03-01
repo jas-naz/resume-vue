@@ -3,7 +3,8 @@ const path = require('path');
 const CompressionPlugin = require("compression-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const webpack = require('webpack');
 // const NpmInstallPlugin = require('npm-install-webpack-plugin');
 
 module.exports = {
@@ -17,10 +18,10 @@ module.exports = {
   //   vendors,
   // },
   output: {
-    path: path.resolve(__dirname, 'dist'),
     filename: './[name].js',
     clean: true,
-    publicPath: '/',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -39,13 +40,13 @@ module.exports = {
     rules: [
       { test: /.tsx?$/, loader: 'ts-loader' },
       { test: /\.(css|less)$/,
-          use: [{
-              loader: "style-loader" // creates style nodes from JS strings
-          }, {
-              loader: "css-loader" // translates CSS into CommonJS
-          }, {
-              loader: "less-loader" // compiles Less to CSS
-          }]
+        use: [{
+          loader: "style-loader" // creates style nodes from JS strings
+        }, { // MiniCssExtractPlugin.loader, "css-loader",
+          loader: "css-loader" // translates CSS into CommonJS
+        }, {
+          loader: "less-loader" // compiles Less to CSS
+        }]
       }
     ]
   },
@@ -61,9 +62,12 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: './static/data.json' }
+        { from: "./static/*.json" }
       ]
-    })
+    }),
+    // new MiniCssExtractPlugin({
+    //   filename: "[name].css",
+    // }),
     //   new NpmInstallPlugin(),
     // //   new webpack.optimize.CommonsChunkPlugin({
     // //     name: 'vendor',
@@ -79,9 +83,9 @@ module.exports = {
     },
     host: 'localhost',
     hot: true,
-    // devMiddleware: {
-    //   writeToDisk: true,
-    // },
+    devMiddleware: {
+      writeToDisk: false,
+    },
     watchFiles: ['static/*.json'],
   },
   optimization: {

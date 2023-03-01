@@ -6,6 +6,7 @@
 @arctic-blue: #2D92B7;
 @deep-cyan-blue: #17669B;
 @deep-blue: #074586;
+// @db-80: spin(hsl(@deep-blue, 89%, 55%), -4.5);// hsl(90, 80%, 50%)
 
 @light-gray: #dedede;
 @normal-gray: #8b8b8b;
@@ -13,6 +14,7 @@
 @color-1: @vivid-arctic-blue;
 @color-2: @arctic-blue;
 @color-3: @deep-cyan-blue;
+// @color-3: @db-80;
 @color-4: @deep-blue;
 .vendor(@property, @value) {
     -webkit-@{property}: @value; // Safari */
@@ -190,7 +192,7 @@ body {
             display: none;
         }
     }
-    .small-label {
+    .small-label { 
         font-weight: 500;
         font-size: 1.5em;
         margin-bottom: 15px;

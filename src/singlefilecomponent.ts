@@ -16,7 +16,7 @@ export default {
     template : `
         <div v-if='resumeData != null'>
             <div class='area'>
-                <side-bar typeclass='profile' propa='My' propb='Profile'></side-bar>
+                <side-bar typeclass='profile' propa='My' propb='Profile' :hue='hueColor'></side-bar>
                 <div class='grouped profile'>
                     <div class='name'>{{ resumeData.profile.first }}
                         <div>{{ resumeData.profile.last }}</div>
@@ -41,7 +41,7 @@ export default {
             </div>
             <!-- EXPERIENCE -->
             <div class='area'>
-                <side-bar typeclass='experience' propa='My' propb='Experience'></side-bar>
+                <side-bar typeclass='experience' propa='My' propb='Experience' :hue='hueColor'></side-bar>
                 <div class='grouped separator'>
                     <div class="small-label experience">My Experience</div>
                     <div v-for='work in resumeData.experience' class='item'>
@@ -59,7 +59,7 @@ export default {
             </div>
             <!-- EDUCATION -->
             <div class='area'>
-                <side-bar typeclass='education' propa='My' propb='Education'></side-bar>
+                <side-bar typeclass='education' propa='My' propb='Education' :hue='hueColor'></side-bar>
                 <div class='grouped separator'>
                     <div class="small-label education">My Education</div>
                     <div v-for='school in resumeData.education' class='item'>
@@ -76,7 +76,7 @@ export default {
                 </div>
             </div>
             <div class='area'>
-                <side-bar typeclass='skills' propa='Skills &' propb='Interests'></side-bar>
+                <side-bar typeclass='skills' propa='Skills &' propb='Interests' :hue='hueColor'></side-bar>
                 <div class='grouped separator'>
                     <div class="small-label skills">Skills & Interests</div>
                     <h2 class="small-hide">Skills</h2>
@@ -90,6 +90,9 @@ export default {
             </div>
         </div>
     `,
+    // created() {
+        
+    // },
     data() {
         // const self : any = this
         // let resumeData = $.getJSON('./static/data.json', function (data : any) {
@@ -98,11 +101,21 @@ export default {
         //         return data.responseText
         //     }.bind(this))
         // return { resumeData: {introduction: null} }
-        return { resumeData: null }
+        return { resumeData: null, hueColor: null }
     },
     mounted() {
-        const self:any = this
-        $.getJSON('./data.json', json => {
+        let urlParams = new URLSearchParams(window.location.search);
+        const whos = urlParams.has('who') && urlParams.get('who');
+        const dataFile = (whos == 'zori') ?
+            'zori-data.json' :
+            'data.json';
+        // console.log(urlParams.has('who')); // true
+        // console.log(urlParams.get('who')); // "MyParam"
+        const self: any = this;
+        self.hueColor = (whos == 'zori') ?
+            `100deg` : // pink
+            ''; // default blue
+        $.getJSON(`./static/${dataFile}`, json => {
             self.resumeData = json
         })
     }
